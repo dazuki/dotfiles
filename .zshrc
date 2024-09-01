@@ -91,8 +91,10 @@ alias ls="eza -hgo --no-filesize --group-directories-first --git-repos-no-status
 alias web="cd /var/www/"
 alias pping="prettyping --nolegend"
 alias art="php artisan"
+alias arthost="php artisan serve --host=192.168.0.150 --port=8001"
 alias yt="ytfzf --show-thumbnails -T kitty"
 
 # Shell integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+#eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
