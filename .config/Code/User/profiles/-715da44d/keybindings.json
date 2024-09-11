@@ -13,5 +13,15 @@
     {
         "key": "ctrl+shift+alt+f",
         "command": "editor.action.formatInlineHtml"
+    },
+    {
+        "key": "ctrl+alt+[Comma]",
+        "command": "codeium.openChatView",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+alt+a",
+        "command": "-codeium.openChatView",
+        "when": "true"
     }
 ]

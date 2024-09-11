@@ -1,4 +1,7 @@
 {
+    // window
+    "window.title": "${rootName}",
+
     // editor
     "editor.lineNumbers": "off",
     "editor.minimap.enabled": false,
@@ -14,6 +17,13 @@
     "editor.indentSize": 4,
     "editor.tabSize": 4,
     "editor.lightbulb.enabled": "off",
+    "editor.glyphMargin": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.hover.sticky": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 0,
 
     // workbench
     "workbench.iconTheme": "material-icon-theme",
@@ -21,6 +31,7 @@
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "One Dark Pro Mix",
     "workbench.statusBar.visible": false,
+    "workbench.tree.enableStickyScroll": false,
 
     // terminal
     "terminal.integrated.defaultProfile.linux": "zsh",
@@ -38,11 +49,34 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.enabled": false,
 
+    // source control
+    "scm.diffDecorations": "overview",
+
     // css
     "css.lint.unknownAtRules": "ignore",
 
     // prettier
     "prettier.tabWidth": 4,
+
+    // tw fold
+    "tailwind-fold.unfoldIfLineSelected": true,
+    "tailwind-fold.autoFold": true,
+    "tailwind-fold.supportedLanguages": [
+        "html",
+        "typescriptreact",
+        "javascriptreact",
+        "typescript",
+        "javascript",
+        "vue-html",
+        "vue",
+        "php",
+        "blade",
+        "markdown",
+        "coffeescript",
+        "svelte",
+        "astro",
+        "erb"
+    ],
 
     // file specific
     "[blade]": {
@@ -68,7 +102,15 @@
         ".editor .title": "background: transparent !important",
         ".actions-container.highlight-toggled": "display: none",
         ".editor .scrollbar .slider": "visibility: hidden",
-        ".editor .scrollbar:hover .slider": "visibility: initial"
+        ".editor .scrollbar:hover .slider": "visibility: initial",
+        ".composite.title .title-label": "display: none",
+        ".composite.title .title-actions": "display: none",
+        ".composite.title .global-actions": "display: none",
+        ".monaco-workbench .part>.header-or-footer, .monaco-workbench .part>.title": "height: 6px",
+        ".part.sidebar.right.pane-composite-part": "height: 100%",
+        ".monaco-list-rows": "font-size: 14px",
+        ".tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom": "border: 1px solid #222 !important;--tab-border-bottom-color: none !important"
+        //".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container": "justifiy-content: center"
     },
     "apc.statusBar": {
         "position": "editor-top"
@@ -77,6 +119,5 @@
     // other
     "redhat.telemetry.enabled": false,
     "breadcrumbs.enabled": false,
-    "window.title": "${rootName}",
     "laravel-pint.enable": true
 }
