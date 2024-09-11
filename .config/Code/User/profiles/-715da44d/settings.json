@@ -1,0 +1,72 @@
+{
+    // editor
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "editor.folding": false,
+    "editor.guides.indentation": false,
+    "editor.renderLineHighlight": "none",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontWeight": 500,
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.indentSize": 4,
+    "editor.tabSize": 4,
+    "editor.lightbulb.enabled": "off",
+
+    // workbench
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "One Monokai",
+    "workbench.statusBar.visible": false,
+
+    // terminal
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontSize": 16,
+
+    // git
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
+
+    // gitlens
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "annotation",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
+
+    // css
+    "css.lint.unknownAtRules": "ignore",
+
+    // prettier
+    "prettier.tabWidth": 4,
+
+    // file specific
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "[php]": {
+        "editor.linkedEditing": true,
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
+    },
+
+    // apc
+    "apc.electron": {},
+    "apc.activityBar": {
+        "size": 40,
+        "itemSize": 40,
+        "itemMargin": 0
+    },
+
+    // other
+    "redhat.telemetry.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.title": "${rootName}",
+    "laravel-pint.enable": true
+}

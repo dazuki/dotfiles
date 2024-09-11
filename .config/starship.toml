@@ -1,0 +1,65 @@
+format = """
+$python\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$character"""
+
+add_newline = false
+
+[username]
+style_user = "green"
+format = "[$user]($style) "
+show_always = true
+
+[hostname]
+ssh_only = false
+style = "yellow"
+format = "[$hostname]($style): "
+
+[directory]
+truncation_symbol = ".../"
+read_only = " 󰌾"
+home_symbol = "~"
+style = "blue"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vimcmd_symbol = "[<](bold yellow)"
+
+[git_branch]
+format = "[$symbol$branch]($style)"
+style = "bright-yellow"
+
+[git_status]
+format = "[[(***$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-yellow"
+
+[cmd_duration]
+disabled = true
+format = "[$duration]($style) "
+style = "dimmed"
+
+[python]
+#format = "[$virtualenv$version]($style) "
+format = '[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+style = "purple"
+
+[line_break]
+disabled = true

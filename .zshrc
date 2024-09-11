@@ -44,6 +44,7 @@ zinit cdreplay -q
 export PATH="$PATH:/home/dazuki/.local/bin"
 export PATH="$PATH:/home/dazuki/.cargo/bin"
 export PATH="$PATH:/home/dazuki/Qt/6.7.2/gcc_64/bin"
+export PATH="$PATH:/home/dazuki/quickemu"
 
 # Better docker ps
 docker() {
