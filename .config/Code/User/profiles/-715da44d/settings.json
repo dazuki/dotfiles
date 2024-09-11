@@ -19,7 +19,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "One Monokai",
+    "workbench.colorTheme": "One Dark Pro Mix",
     "workbench.statusBar.visible": false,
 
     // terminal
@@ -62,6 +62,16 @@
         "size": 40,
         "itemSize": 40,
         "itemMargin": 0
+    },
+    "apc.stylesheet": {
+        "*": "font-family: JetBrainsMono Nerd Font",
+        ".editor .title": "background: transparent !important",
+        ".actions-container.highlight-toggled": "display: none",
+        ".editor .scrollbar .slider": "visibility: hidden",
+        ".editor .scrollbar:hover .slider": "visibility: initial"
+    },
+    "apc.statusBar": {
+        "position": "editor-top"
     },
 
     // other
