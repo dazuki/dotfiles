@@ -29,8 +29,8 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "One Dark Pro Mix",
-    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "One Monokai",
+    "workbench.statusBar.visible": true,
     "workbench.tree.enableStickyScroll": false,
 
     // terminal
@@ -87,7 +87,8 @@
     },
     "[php]": {
         "editor.linkedEditing": true,
-        "editor.defaultFormatter": "open-southeners.laravel-pint"
+        "editor.defaultFormatter": "open-southeners.laravel-pint",
+        "laravel-pint.enable": true
     },
 
     // apc
@@ -103,21 +104,15 @@
         ".actions-container.highlight-toggled": "display: none",
         ".editor .scrollbar .slider": "visibility: hidden",
         ".editor .scrollbar:hover .slider": "visibility: initial",
-        ".composite.title .title-label": "display: none",
-        ".composite.title .title-actions": "display: none",
-        ".composite.title .global-actions": "display: none",
-        ".monaco-workbench .part>.header-or-footer, .monaco-workbench .part>.title": "height: 6px",
         ".part.sidebar.right.pane-composite-part": "height: 100%",
         ".monaco-list-rows": "font-size: 14px",
         ".tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom": "border: 1px solid #222 !important;--tab-border-bottom-color: none !important"
-        //".monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container": "justifiy-content: center"
     },
     "apc.statusBar": {
-        "position": "editor-top"
+        "position": "bottom"
     },
 
     // other
     "redhat.telemetry.enabled": false,
-    "breadcrumbs.enabled": false,
-    "laravel-pint.enable": true
+    "breadcrumbs.enabled": false
 }

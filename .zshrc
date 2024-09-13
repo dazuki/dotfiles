@@ -46,6 +46,9 @@ export PATH="$PATH:/home/dazuki/.cargo/bin"
 export PATH="$PATH:/home/dazuki/Qt/6.7.2/gcc_64/bin"
 export PATH="$PATH:/home/dazuki/quickemu"
 
+#export PATH="$PATH:/home/dazuki/graalvm-jdk-17.0.12+8.1/bin"
+#export JAVA_HOME="/home/dazuki/graalvm-jdk-17.0.12+8.1"
+
 # Better docker ps
 docker() {
   case $1 in
