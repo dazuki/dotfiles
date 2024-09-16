@@ -45,6 +45,8 @@ export PATH="$PATH:/home/dazuki/.local/bin"
 export PATH="$PATH:/home/dazuki/.cargo/bin"
 export PATH="$PATH:/home/dazuki/Qt/6.7.2/gcc_64/bin"
 export PATH="$PATH:/home/dazuki/quickemu"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/home/dazuki/go/bin"
 
 #export PATH="$PATH:/home/dazuki/graalvm-jdk-17.0.12+8.1/bin"
 #export JAVA_HOME="/home/dazuki/graalvm-jdk-17.0.12+8.1"
@@ -100,5 +102,5 @@ alias yt="ytfzf --show-thumbnails -T kitty"
 
 # Shell integrations
 eval "$(fzf --zsh)"
-#eval "$(zoxide init --cmd cd zsh)"
 eval "$(zoxide init zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
