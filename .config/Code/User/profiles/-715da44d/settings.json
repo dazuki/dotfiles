@@ -22,8 +22,9 @@
     "editor.hover.sticky": false,
     "editor.stickyScroll.enabled": false,
     "editor.hideCursorInOverviewRuler": true,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "visible",
+    "editor.scrollbar.verticalScrollbarSize": 12,
 
     // workbench
     "workbench.iconTheme": "material-icon-theme",
@@ -60,7 +61,7 @@
 
     // tw fold
     "tailwind-fold.unfoldIfLineSelected": true,
-    "tailwind-fold.autoFold": true,
+    "tailwind-fold.autoFold": false,
     "tailwind-fold.supportedLanguages": [
         "html",
         "typescriptreact",
@@ -102,11 +103,12 @@
         "*": "font-family: JetBrainsMono Nerd Font",
         ".editor .title": "background: transparent !important",
         ".actions-container.highlight-toggled": "display: none",
-        ".editor .scrollbar .slider": "visibility: hidden",
+        ".editor .scrollbar .slider": "opacity: .4",
         ".editor .scrollbar:hover .slider": "visibility: initial",
         ".part.sidebar.right.pane-composite-part": "height: 100%",
         ".monaco-list-rows": "font-size: 14px",
-        ".tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom": "border: 1px solid #222 !important;--tab-border-bottom-color: none !important"
+        ".tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom": "border: 1px solid #222 !important;--tab-border-bottom-color: none !important",
+        ".monaco-editor .scroll-decoration": "display: none"
     },
     "apc.statusBar": {
         "position": "bottom"
@@ -114,5 +116,9 @@
 
     // other
     "redhat.telemetry.enabled": false,
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "codeium.enableConfig": {
+        "*": true,
+        "properties": true
+    }
 }
