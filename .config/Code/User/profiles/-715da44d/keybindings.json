@@ -23,5 +23,9 @@
         "key": "ctrl+alt+a",
         "command": "-codeium.openChatView",
         "when": "true"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "settings.cycle.lineNumbers"
     }
 ]

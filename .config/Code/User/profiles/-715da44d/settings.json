@@ -3,7 +3,7 @@
     "window.title": "${rootName}",
 
     // editor
-    "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.folding": false,
     "editor.guides.indentation": false,
@@ -46,9 +46,25 @@
 
     // gitlens
     "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "annotation",
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.enabled": false,
+    "gitlens.hovers.currentLine.over": "annotation",
+    "gitlens.views.commitDetails.files.layout": "tree",
+
+    // settings cycler
+    "settings.cycle": [
+        {
+            "id": "lineNumbers",
+            "values": [
+                {
+                    "editor.lineNumbers": "off"
+                },
+                {
+                    "editor.lineNumbers": "on"
+                }
+            ]
+        }
+    ],
 
     // source control
     "scm.diffDecorations": "overview",
@@ -78,6 +94,14 @@
         "astro",
         "erb"
     ],
+
+    // codeium
+    "codeium.enableConfig": {
+        "*": true,
+        "properties": true,
+        "Log": true,
+        "xml": true
+    },
 
     // file specific
     "[blade]": {
@@ -116,9 +140,5 @@
 
     // other
     "redhat.telemetry.enabled": false,
-    "breadcrumbs.enabled": false,
-    "codeium.enableConfig": {
-        "*": true,
-        "properties": true
-    }
+    "breadcrumbs.enabled": false
 }
