@@ -101,6 +101,11 @@ alias art="php artisan"
 alias arthost="php artisan serve --host=192.168.0.159 --port=8001"
 alias yt="ytfzf --show-thumbnails -T kitty"
 
+# rclone alias
+alias mnt-android="rclone mount android:/data/data/com.termux/files/home/ /data/mnt-android"
+alias mnt-bgse="rclone mount bgse-server:/home/dazuki/ /data/mnt-bgse"
+alias mnt-dropbox="rclone mount dropbox:/ /data/mnt-dropbox"
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"

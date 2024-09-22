@@ -3,7 +3,7 @@
     "window.title": "${rootName}",
 
     // editor
-    "editor.lineNumbers": "on",
+    "editor.lineNumbers": "off",
     "editor.minimap.enabled": false,
     "editor.folding": false,
     "editor.guides.indentation": false,
