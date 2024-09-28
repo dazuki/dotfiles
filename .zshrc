@@ -48,6 +48,7 @@ export PATH="$PATH:/home/dazuki/quickemu"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/dazuki/go/bin"
 export PATH="$PATH:/home/dazuki/ZDL/ZDL_3-1.1_Linux_x64"
+export PATH="$PATH:/home/dazuki/bin"
 
 #export PATH="$PATH:/home/dazuki/graalvm-jdk-17.0.12+8.1/bin"
 #export JAVA_HOME="/home/dazuki/graalvm-jdk-17.0.12+8.1"
@@ -82,6 +83,9 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Remove double confirmation by zsh
+setopt rm_star_silent
+
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -100,6 +104,8 @@ alias pping="prettyping --nolegend"
 alias art="php artisan"
 alias arthost="php artisan serve --host=192.168.0.159 --port=8001"
 alias yt="ytfzf --show-thumbnails -T kitty"
+alias rm-ffc="rm -rf ~/.cache/mozilla/firefox/*"
+alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?token=$(skate get ipinfo)' | jq"
 
 # rclone alias
 alias mnt-android="rclone mount android:/data/data/com.termux/files/home/ /data/mnt-android"
