@@ -43,6 +43,7 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
+    "github.copilot.preferredAccount": "dazuki",
 
     // gitlens
     "gitlens.currentLine.enabled": false,
