@@ -3,7 +3,7 @@
     "window.title": "${rootName}",
 
     // editor
-    "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.folding": false,
     "editor.guides.indentation": false,
@@ -27,10 +27,10 @@
     "editor.scrollbar.verticalScrollbarSize": 12,
 
     // workbench
+    "workbench.colorTheme": "One Monokai",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "One Monokai",
     "workbench.statusBar.visible": true,
     "workbench.tree.enableStickyScroll": false,
 
@@ -43,7 +43,6 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
-    "github.copilot.preferredAccount": "dazuki",
 
     // gitlens
     "gitlens.currentLine.enabled": false,
@@ -68,7 +67,7 @@
     ],
 
     // source control
-    "scm.diffDecorations": "overview",
+    "scm.diffDecorations": "all",
 
     // css
     "css.lint.unknownAtRules": "ignore",
@@ -96,14 +95,6 @@
         "erb"
     ],
 
-    // codeium
-    "codeium.enableConfig": {
-        "*": true,
-        "properties": true,
-        "Log": true,
-        "xml": true
-    },
-
     // file specific
     "[blade]": {
         "editor.defaultFormatter": "shufo.vscode-blade-formatter"
@@ -117,7 +108,7 @@
         "laravel-pint.enable": true
     },
 
-    // apc
+    /* // apc
     "apc.electron": {},
     "apc.activityBar": {
         "size": 40,
@@ -137,7 +128,7 @@
     },
     "apc.statusBar": {
         "position": "bottom"
-    },
+    }, */
 
     // other
     "redhat.telemetry.enabled": false,
