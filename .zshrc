@@ -51,6 +51,10 @@ export PATH="$PATH:/home/dazuki/ZDL/ZDL_3-1.1_Linux_x64"
 export PATH="$PATH:/home/dazuki/bin"
 export PATH="$PATH:/home/dazuki/.viewaliases"
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 #export PATH="$PATH:/home/dazuki/graalvm-jdk-17.0.12+8.1/bin"
 #export JAVA_HOME="/home/dazuki/graalvm-jdk-17.0.12+8.1"
 
@@ -119,3 +123,4 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(gh copilot alias -- zsh)"
+eval "$(pyenv virtualenv-init -)"

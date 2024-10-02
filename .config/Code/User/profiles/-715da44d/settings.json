@@ -10,8 +10,11 @@
     "editor.renderLineHighlight": "none",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontWeight": 500,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
+    "editor.lineHeight": 1.5,
+    "editor.smoothScrolling": true,
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "normal",
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.indentSize": 4,
@@ -27,7 +30,7 @@
     "editor.scrollbar.verticalScrollbarSize": 12,
 
     // workbench
-    "workbench.colorTheme": "One Monokai",
+    "workbench.colorTheme": "Minimal Kiwi",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
@@ -35,8 +38,11 @@
     "workbench.tree.enableStickyScroll": false,
 
     // terminal
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
+    "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeight": "normal",
 
     // git
     "git.enableSmartCommit": true,
@@ -44,12 +50,12 @@
     "git.autofetch": true,
     "git.openRepositoryInParentFolders": "never",
 
-    // gitlens
+    /* // gitlens
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.enabled": false,
     "gitlens.hovers.currentLine.over": "annotation",
-    "gitlens.views.commitDetails.files.layout": "tree",
+    "gitlens.views.commitDetails.files.layout": "tree", */
 
     // settings cycler
     "settings.cycle": [
@@ -99,38 +105,16 @@
     "[blade]": {
         "editor.defaultFormatter": "shufo.vscode-blade-formatter"
     },
+    "[php]": {
+        "editor.linkedEditing": true,
+        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+    },
     "[astro]": {
         "editor.defaultFormatter": "astro-build.astro-vscode"
     },
-    "[php]": {
-        "editor.linkedEditing": true,
-        "editor.defaultFormatter": "open-southeners.laravel-pint",
-        "laravel-pint.enable": true
-    },
-
-    /* // apc
-    "apc.electron": {},
-    "apc.activityBar": {
-        "size": 40,
-        "itemSize": 40,
-        "itemMargin": 0
-    },
-    "apc.stylesheet": {
-        "*": "font-family: JetBrainsMono Nerd Font",
-        ".editor .title": "background: transparent !important",
-        ".actions-container.highlight-toggled": "display: none",
-        ".editor .scrollbar .slider": "opacity: .4",
-        ".editor .scrollbar:hover .slider": "visibility: initial",
-        ".part.sidebar.right.pane-composite-part": "height: 100%",
-        ".monaco-list-rows": "font-size: 14px",
-        ".tab.tab-actions-right.sizing-fit.has-icon.tab-border-bottom": "border: 1px solid #222 !important;--tab-border-bottom-color: none !important",
-        ".monaco-editor .scroll-decoration": "display: none"
-    },
-    "apc.statusBar": {
-        "position": "bottom"
-    }, */
 
     // other
     "redhat.telemetry.enabled": false,
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "betterGitLineBlame.showInlineAnnotations": false
 }
