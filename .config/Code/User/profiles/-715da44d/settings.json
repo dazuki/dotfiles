@@ -1,120 +1,106 @@
 {
-    // window
-    "window.title": "${rootName}",
+  // window
+  "window.title": "${rootName}",
 
-    // editor
-    "editor.lineNumbers": "on",
-    "editor.minimap.enabled": false,
-    "editor.folding": false,
-    "editor.guides.indentation": false,
-    "editor.renderLineHighlight": "none",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.mouseWheelZoom": true,
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
-    "editor.lineHeight": 1.5,
-    "editor.smoothScrolling": true,
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "normal",
-    "editor.fontSize": 16,
-    "editor.formatOnSave": true,
-    "editor.indentSize": 4,
-    "editor.tabSize": 4,
-    "editor.lightbulb.enabled": "off",
-    "editor.glyphMargin": false,
-    "editor.stickyScroll.scrollWithEditor": false,
-    "editor.hover.sticky": false,
-    "editor.stickyScroll.enabled": false,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "visible",
-    "editor.scrollbar.verticalScrollbarSize": 12,
+  // editor
+  "editor.lineNumbers": "off",
+  "editor.minimap.enabled": false,
+  "editor.folding": false,
+  "editor.guides.indentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.mouseWheelZoom": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
+  "editor.lineHeight": 1.5,
+  "editor.smoothScrolling": true,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.indentSize": 4,
+  "editor.tabSize": 4,
+  "editor.lightbulb.enabled": "off",
+  "editor.glyphMargin": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.hover.sticky": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.verticalScrollbarSize": 12,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.tree.enableStickyScroll": false,
 
-    // workbench
-    "workbench.colorTheme": "Minimal Kiwi",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "none",
-    "workbench.statusBar.visible": true,
-    "workbench.tree.enableStickyScroll": false,
+  // terminal
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "normal",
 
-    // terminal
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
-    "terminal.integrated.lineHeight": 1.5,
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontWeight": "normal",
+  // git
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
 
-    // git
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "git.openRepositoryInParentFolders": "never",
-
-    /* // gitlens
+  /* // gitlens
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.hovers.enabled": false,
     "gitlens.hovers.currentLine.over": "annotation",
     "gitlens.views.commitDetails.files.layout": "tree", */
 
-    // settings cycler
-    "settings.cycle": [
+  // settings cycler
+  "settings.cycle": [
+    {
+      "id": "lineNumbers",
+      "values": [
         {
-            "id": "lineNumbers",
-            "values": [
-                {
-                    "editor.lineNumbers": "off"
-                },
-                {
-                    "editor.lineNumbers": "on"
-                }
-            ]
+          "editor.lineNumbers": "off"
+        },
+        {
+          "editor.lineNumbers": "on"
         }
-    ],
+      ]
+    }
+  ],
 
-    // source control
-    "scm.diffDecorations": "all",
+  // source control
+  "scm.diffDecorations": "all",
 
-    // css
-    "css.lint.unknownAtRules": "ignore",
+  // css
+  "css.lint.unknownAtRules": "ignore",
 
-    // prettier
-    "prettier.tabWidth": 4,
+  // prettier
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "none",
+  "prettier.semi": false,
+  "prettier.arrowParens": "avoid",
+  "prettier.singleQuote": true,
 
-    // tw fold
-    "tailwind-fold.unfoldIfLineSelected": true,
-    "tailwind-fold.autoFold": false,
-    "tailwind-fold.supportedLanguages": [
-        "html",
-        "typescriptreact",
-        "javascriptreact",
-        "typescript",
-        "javascript",
-        "vue-html",
-        "vue",
-        "php",
-        "blade",
-        "markdown",
-        "coffeescript",
-        "svelte",
-        "astro",
-        "erb"
-    ],
+  // file specific
+  "laravel-pint.enable": true,
 
-    // file specific
-    "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
-    },
-    "[php]": {
-        "editor.linkedEditing": true,
-        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
-    },
-    "[astro]": {
-        "editor.defaultFormatter": "astro-build.astro-vscode"
-    },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[php]": {
+    "editor.linkedEditing": true,
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  },
 
-    // other
-    "redhat.telemetry.enabled": false,
-    "breadcrumbs.enabled": false,
-    "betterGitLineBlame.showInlineAnnotations": false
+  // php
+  "php.inlayHints.parameters.enabled": false,
+  "php.inlayHints.parameters.byReference": false,
+
+  // other
+  "redhat.telemetry.enabled": false,
+  "breadcrumbs.enabled": false,
+  "betterGitLineBlame.showInlineAnnotations": false,
+  "workbench.colorTheme": "One Dark Pro Darker"
 }
