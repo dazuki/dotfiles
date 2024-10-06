@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -56,9 +49,6 @@ export PATH="$PATH:/home/dazuki/yt-scripts"
 #[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "$(pyenv init -)"
 
-#export PATH="$PATH:/home/dazuki/graalvm-jdk-17.0.12+8.1/bin"
-#export JAVA_HOME="/home/dazuki/graalvm-jdk-17.0.12+8.1"
-
 # Better docker ps
 docker() {
   case $1 in
@@ -101,24 +91,17 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Alias
 alias ssh="kitten ssh"
-alias cssh="ssh"
 alias icat="kitten icat"
 alias c="clear"
 alias n="nvim"
 alias ls="eza -hgo --no-filesize --group-directories-first --git-repos-no-status --icons=always --hyperlink"
 alias web="cd /var/www/"
-alias pping="prettyping --nolegend"
 alias art="php artisan"
-alias arthost="php artisan serve --host=192.168.0.159 --port=8001"
 alias yt="ytfzf --show-thumbnails -T kitty"
 alias rm-ffc="rm -rf ~/.cache/mozilla/firefox/*"
-alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?token=$(skate get ipinfo)' | jq"
+#alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?token=$(skate get ipinfo)' | jq"
 alias viewalias="alias | viewaliases"
-
-# rclone alias
-alias mnt-android="rclone mount android:/data/data/com.termux/files/home/ /data/mnt-android"
-alias mnt-bgse="rclone mount bgse-server:/home/dazuki/ /data/mnt-bgse"
-alias mnt-dropbox="rclone mount dropbox:/ /data/mnt-dropbox"
+alias screen="TERM=screen screen"
 
 # Shell integrations
 eval "$(fzf --zsh)"
