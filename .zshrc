@@ -24,6 +24,9 @@ zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::dnf
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::colored-man-pages
+zinit snippet OMZP::cp
+zinit snippet OMZP::dnf
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -99,7 +102,7 @@ alias web="cd /var/www/"
 alias art="php artisan"
 alias yt="ytfzf --show-thumbnails -T kitty"
 alias rm-ffc="rm -rf ~/.cache/mozilla/firefox/*"
-#alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?token=$(skate get ipinfo)' | jq"
+alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?token=$(skate get ipinfo)' | jq"
 alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
 
