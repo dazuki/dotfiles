@@ -10,9 +10,6 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Add in Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -33,24 +30,22 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # Export Paths
 export PATH="$PATH:/home/dazuki/.local/bin"
 export PATH="$PATH:/home/dazuki/.cargo/bin"
 export PATH="$PATH:/home/dazuki/Qt/6.7.2/gcc_64/bin"
 export PATH="$PATH:/home/dazuki/quickemu"
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/home/dazuki/go/bin"
 export PATH="$PATH:/home/dazuki/ZDL/ZDL_3-1.1_Linux_x64"
 export PATH="$PATH:/home/dazuki/bin"
 export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
+export PATH="$PATH:/home/dazuki/apache-jmeter-5.6.3/bin"
 
-#export PYENV_ROOT="$HOME/.pyenv"
-#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
+# Oh-My-Posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
 
 # Better docker ps
 docker() {
@@ -110,5 +105,3 @@ alias screen="TERM=screen screen"
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(gh copilot alias -- zsh)"
-#eval "$(pyenv virtualenv-init -)"
