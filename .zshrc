@@ -41,6 +41,7 @@ export PATH="$PATH:/home/dazuki/bin"
 export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
 export PATH="$PATH:/home/dazuki/apache-jmeter-5.6.3/bin"
+export PATH="$PATH:/home/dazuki/fastfetch/build"
 
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
@@ -99,6 +100,8 @@ alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?t
 alias paperless-backup="docker exec -it paperless-webserver sh -c 'document_exporter /paperless_backup -z'"
 alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
+alias wttr="curl sv.wttr.in/alingsås"
+alias wttrl="curl 'sv.wttr.in/alingsås?format=3'"
 
 # Shell integrations
 eval "$(fzf --zsh)"
