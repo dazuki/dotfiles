@@ -14,7 +14,7 @@
   "editor.lineHeight": 1.5,
   "editor.smoothScrolling": true,
   "editor.fontLigatures": true,
-  "editor.fontWeight": "normal",
+  "editor.fontWeight": 600,
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.indentSize": 4,
@@ -33,13 +33,14 @@
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
   "workbench.tree.enableStickyScroll": false,
+  "workbench.colorTheme": "One Dark Pro",
 
   // terminal
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
   "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": 400,
 
   // git
   "git.enableSmartCommit": true,
@@ -101,6 +102,5 @@
   // other
   "redhat.telemetry.enabled": false,
   "breadcrumbs.enabled": false,
-  "betterGitLineBlame.showInlineAnnotations": false,
-  "workbench.colorTheme": "One Dark Pro Darker"
+  "betterGitLineBlame.showInlineAnnotations": false
 }
