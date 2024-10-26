@@ -29,11 +29,13 @@
   "editor.scrollbar.vertical": "visible",
   "editor.scrollbar.verticalScrollbarSize": 12,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
   "workbench.tree.enableStickyScroll": false,
   "workbench.colorTheme": "One Dark Pro",
+
+  "breadcrumbs.enabled": false,
 
   // terminal
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
@@ -47,6 +49,8 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.openRepositoryInParentFolders": "never",
+
+  "betterGitLineBlame.showInlineAnnotations": false,
 
   /* // gitlens
     "gitlens.currentLine.enabled": false,
@@ -76,6 +80,15 @@
   // css
   "css.lint.unknownAtRules": "ignore",
 
+  // intellisense php
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "intelephense.codeLens.implementations.enable": true,
+  "intelephense.codeLens.overrides.enable": true,
+  "intelephense.codeLens.parent.enable": true,
+  "intelephense.codeLens.references.enable": true,
+  "intelephense.codeLens.usages.enable": true,
+
   // prettier
   "prettier.tabWidth": 2,
   "prettier.printWidth": 120,
@@ -100,7 +113,5 @@
   "php.inlayHints.parameters.byReference": false,
 
   // other
-  "redhat.telemetry.enabled": false,
-  "breadcrumbs.enabled": false,
-  "betterGitLineBlame.showInlineAnnotations": false
+  "redhat.telemetry.enabled": false
 }

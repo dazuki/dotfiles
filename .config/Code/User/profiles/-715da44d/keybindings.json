@@ -1,43 +1,95 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "ctrl+[Semicolon]",
-        "command": "workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+shift+[Equal]",
-        "command": "-workbench.action.terminal.toggleTerminal",
-        "when": "terminal.active"
-    },
-    {
-        "key": "ctrl+shift+alt+f",
-        "command": "editor.action.formatInlineHtml"
-    },
-    {
-        "key": "ctrl+alt+[Comma]",
-        "command": "codeium.openChatView",
-        "when": "true"
-    },
-    {
-        "key": "ctrl+alt+a",
-        "command": "-codeium.openChatView",
-        "when": "true"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "settings.cycle.lineNumbers"
-    },
-    {
-        "key": "alt+right",
-        "command": "editor.action.inlineSuggest.showNext"
-    },
-    {
-        "key": "alt+left",
-        "command": "editor.action.inlineSuggest.showPrevious"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "editor.action.inlineSuggest.trigger"
-    }
+  {
+    "key": "ctrl+[Semicolon]",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+shift+[Equal]",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "editor.action.formatInlineHtml"
+  },
+  {
+    "key": "ctrl+alt+[Comma]",
+    "command": "codeium.openChatView",
+    "when": "true"
+  },
+  {
+    "key": "ctrl+alt+a",
+    "command": "-codeium.openChatView",
+    "when": "true"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "settings.cycle.lineNumbers"
+  },
+  {
+    "key": "alt+right",
+    "command": "editor.action.inlineSuggest.showNext"
+  },
+  {
+    "key": "alt+left",
+    "command": "editor.action.inlineSuggest.showPrevious"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.inlineSuggest.trigger"
+  },
+  {
+    "key": "ctrl+alt+numpad6",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+alt+numpad4",
+    "command": "workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+alt+numpad9",
+    "command": "workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+alt+numpad5",
+    "command": "workbench.action.nextPanelView"
+  },
+  {
+    "key": "ctrl+alt+numpad2",
+    "command": "workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+alt+numpad8",
+    "command": "workbench.action.splitEditorUp"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+alt+numpad3",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+numpad1",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  }
 ]

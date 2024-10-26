@@ -1,3 +1,4 @@
+#zmodload zsh/zprof
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -22,6 +23,7 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::dnf
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::colored-man-pages
+zinit snippet OMZP::nvm
 
 # Load completions
 autoload -Uz compinit && compinit
@@ -42,6 +44,7 @@ export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
 export PATH="$PATH:/home/dazuki/apache-jmeter-5.6.3/bin"
 export PATH="$PATH:/home/dazuki/fastfetch/build"
+export PATH="$PATH:/data/PhpStorm/bin"
 
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
@@ -85,6 +88,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':omz:plugins:nvm' lazy yes
 
 # Alias
 alias ssh="kitten ssh"
@@ -102,15 +106,14 @@ alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
 alias wttr="curl 'sv.wttr.in/alingsås'"
 alias wttrl="curl 'sv.wttr.in/alingsås?format=3'"
-alias protontricks="flatpak run com.github.Matoking.protontricks"
-alias protontricks-launch="flatpak run --command=protontricks-launch com.github.Matoking.protontricks"
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#zprof
