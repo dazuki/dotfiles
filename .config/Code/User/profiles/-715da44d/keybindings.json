@@ -49,7 +49,7 @@
     "command": "workbench.action.splitEditorLeft"
   },
   {
-    "key": "ctrl+alt+numpad9",
+    "key": "ctrl+alt+numpad0",
     "command": "workbench.action.closeEditorsInGroup"
   },
   {
@@ -91,5 +91,29 @@
   {
     "key": "ctrl+alt+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+pagedown",
+    "command": "-workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+pageup",
+    "command": "-workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]

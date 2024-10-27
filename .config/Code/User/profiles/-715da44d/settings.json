@@ -10,12 +10,12 @@
   "editor.renderLineHighlight": "none",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.mouseWheelZoom": true,
-  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
+  "editor.fontFamily": "'Monaspace Neon'",
   "editor.lineHeight": 1.5,
   "editor.smoothScrolling": true,
-  "editor.fontLigatures": true,
-  "editor.fontWeight": 600,
-  "editor.fontSize": 16,
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
+  "editor.fontWeight": 400,
+  "editor.fontSize": 15,
   "editor.formatOnSave": true,
   "editor.indentSize": 4,
   "editor.tabSize": 4,
@@ -29,19 +29,18 @@
   "editor.scrollbar.vertical": "visible",
   "editor.scrollbar.verticalScrollbarSize": 12,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
   "workbench.tree.enableStickyScroll": false,
-  "workbench.colorTheme": "One Dark Pro",
-
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.activityBar.location": "default",
   "breadcrumbs.enabled": false,
 
   // terminal
-  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'monospace'",
+  "terminal.integrated.fontFamily": "'Monaspace Neon'",
   "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontWeight": 400,
 
   // git
@@ -51,13 +50,6 @@
   "git.openRepositoryInParentFolders": "never",
 
   "betterGitLineBlame.showInlineAnnotations": false,
-
-  /* // gitlens
-    "gitlens.currentLine.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.hovers.currentLine.over": "annotation",
-    "gitlens.views.commitDetails.files.layout": "tree", */
 
   // settings cycler
   "settings.cycle": [
@@ -113,5 +105,8 @@
   "php.inlayHints.parameters.byReference": false,
 
   // other
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false
 }
