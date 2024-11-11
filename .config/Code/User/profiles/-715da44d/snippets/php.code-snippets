@@ -24,5 +24,12 @@
 			"}"
 		],
 		"description": "Create Public Function"
+	},
+	"Create New Route": {
+		"prefix": "newr",
+		"body": [
+			"Route::$1('/$2', $3::class);"
+		],
+		"description": "Create New Route"
 	}
 }

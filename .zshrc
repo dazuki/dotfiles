@@ -31,8 +31,6 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # Export Paths
-export NVM_DIR="$HOME/.nvm"
-
 export PATH="$PATH:/home/dazuki/.local/bin"
 export PATH="$PATH:/home/dazuki/.cargo/bin"
 export PATH="$PATH:/home/dazuki/Qt/6.7.2/gcc_64/bin"
@@ -108,10 +106,6 @@ alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
 alias wttr="curl 'sv.wttr.in/alingsås'"
 alias wttrl="curl 'sv.wttr.in/alingsås?format=3'"
-
-# NVM
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Shell integrations
 eval "$(fzf --zsh)"

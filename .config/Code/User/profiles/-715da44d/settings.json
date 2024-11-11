@@ -1,6 +1,8 @@
 {
   // window
   "window.title": "${rootName}",
+  "window.commandCenter": false,
+  "window.zoomLevel": 1,
 
   // editor
   "editor.lineNumbers": "off",
@@ -15,7 +17,7 @@
   "editor.smoothScrolling": true,
   "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
   "editor.fontWeight": 400,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.indentSize": 4,
   "editor.tabSize": 4,
@@ -34,13 +36,14 @@
   "workbench.tree.enableStickyScroll": false,
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.activityBar.location": "default",
+  "workbench.layoutControl.enabled": false,
   "breadcrumbs.enabled": false,
 
   // terminal
   "terminal.integrated.fontFamily": "'Monaspace Neon'",
   "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeight": 400,
 
   // git
@@ -82,13 +85,18 @@
   "prettier.arrowParens": "avoid",
   "prettier.singleQuote": true,
 
-  // file specific
-  "laravel-pint.enable": true,
+  // codeium
+  "codeium.enableConfig": {
+    "*": true,
+    "snippets": true
+  },
 
+  // file specific
   "[blade]": {
     "editor.defaultFormatter": "shufo.vscode-blade-formatter"
   },
   "[php]": {
+    "laravel-pint.enable": true,
     "editor.linkedEditing": true,
     "editor.defaultFormatter": "open-southeners.laravel-pint"
   },
@@ -100,9 +108,5 @@
   "intelephense.codeLens.overrides.enable": true,
   "intelephense.codeLens.parent.enable": true,
   "intelephense.codeLens.references.enable": true,
-  "intelephense.codeLens.usages.enable": true,
-
-  // other
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false
+  "intelephense.codeLens.usages.enable": true
 }
