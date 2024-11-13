@@ -44,7 +44,6 @@ export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
 export PATH="$PATH:/home/dazuki/apache-jmeter-5.6.3/bin"
 export PATH="$PATH:/home/dazuki/fastfetch/build"
-export PATH="$PATH:/data/PhpStorm/bin"
 
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
