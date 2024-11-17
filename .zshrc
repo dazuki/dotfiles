@@ -22,31 +22,26 @@ zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::dnf
 zinit snippet OMZP::command-not-found
-zinit snippet OMZP::colored-man-pages
-zinit snippet OMZP::nvm
 
 # Load completions
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
+# fzf
+export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
+export FZF_DEFAULT_COMMAND="fd --type f"
+
 # Export Paths
 export PATH="$PATH:/home/dazuki/.local/bin"
 export PATH="$PATH:/home/dazuki/.cargo/bin"
-export PATH="$PATH:/home/dazuki/Qt/6.7.2/gcc_64/bin"
-export PATH="$PATH:/home/dazuki/quickemu"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/home/dazuki/go/bin"
-export PATH="$PATH:/home/dazuki/ZDL/ZDL_3-1.1_Linux_x64"
 export PATH="$PATH:/home/dazuki/bin"
 export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
-export PATH="$PATH:/home/dazuki/apache-jmeter-5.6.3/bin"
 export PATH="$PATH:/home/dazuki/fastfetch/build"
-
-# Oh-My-Posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
 
 # Better docker ps
 docker() {
@@ -104,8 +99,11 @@ alias paperless-backup="docker exec -it paperless-webserver sh -c 'document_expo
 alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
 
+# Oh-My-Posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
+
 # Shell integrations
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 #zprof
