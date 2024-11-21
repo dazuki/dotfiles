@@ -29,7 +29,7 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # fzf
-export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
+#export FZF_DEFAULT_OPTS="--preview 'bat --color=always {}'"
 export FZF_DEFAULT_COMMAND="fd --type f"
 
 # Export Paths
@@ -42,6 +42,7 @@ export PATH="$PATH:/home/dazuki/bin"
 export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
 export PATH="$PATH:/home/dazuki/fastfetch/build"
+export PATH="$PATH:/home/dazuki/wrun"
 
 # Better docker ps
 docker() {
