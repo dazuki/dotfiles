@@ -99,6 +99,7 @@ alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?t
 alias paperless-backup="docker exec -it paperless-webserver sh -c 'document_exporter /paperless_backup -z'"
 alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
+alias pyactive="source ~/py_env/bin/activate"
 
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"

@@ -17,6 +17,16 @@ final_space = true
   alignment = 'left'
 
   [[blocks.segments]]
+    type = 'python'
+    style = 'plain'
+    foreground = "green"
+    background = "transparent"
+    template = " {{ .Major }}.{{ .Minor }} "
+    
+    [blocks.segments.properties]
+      home_enabled = true
+
+  [[blocks.segments]]
     template = '{{ .Path }}'
     foreground = 'blue'
     background = 'transparent'
