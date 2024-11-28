@@ -43,6 +43,7 @@ export PATH="$PATH:/home/dazuki/.viewaliases"
 export PATH="$PATH:/home/dazuki/yt-scripts"
 export PATH="$PATH:/home/dazuki/fastfetch/build"
 export PATH="$PATH:/home/dazuki/wrun"
+export PATH="$PATH:/home/dazuki/vdf_to_json"
 
 # Better docker ps
 docker() {
