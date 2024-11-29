@@ -2,6 +2,7 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 . "$HOME/.cargo/env"
 
 # charm POP
+source "${HOME}/dotfiles/.zsh_pop"
 
 # virt-manager stuff
 export LIBVIRT_DEFAULT_URI="qemu:///system"
