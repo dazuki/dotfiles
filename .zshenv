@@ -7,11 +7,6 @@ source "${HOME}/.zsh_pop"
 # virt-manager stuff
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
-# GL cache
-export __GL_SHADER_DISK_CACHE=1
-export __GL_SHADER_DISK_CACHE_SIZE=10000000000
-#export __GL_SHADER_DISK_CACHE_PATH=/data/ShaderCache
-
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
