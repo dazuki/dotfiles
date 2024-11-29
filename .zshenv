@@ -2,10 +2,6 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 . "$HOME/.cargo/env"
 
 # charm POP
-export POP_SMTP_HOST=mail.smtp2go.com
-export POP_SMTP_PORT=2525
-export POP_SMTP_USERNAME=lars_smtp2go
-export POP_SMTP_PASSWORD=vmaGK7NWtXMjcRyV
 
 # virt-manager stuff
 export LIBVIRT_DEFAULT_URI="qemu:///system"
