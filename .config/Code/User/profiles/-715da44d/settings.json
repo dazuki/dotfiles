@@ -85,6 +85,7 @@
   "intelephense.codeLens.usages.enable": true,
   "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
   "intelephense.compatibility.preferPsalmPhpstanPrefixedAnnotations": true,
+  "intelephense.diagnostics.undefinedMethods": false,
 
   // prettier
   "prettier.tabWidth": 2,

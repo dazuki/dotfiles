@@ -1,0 +1,43 @@
+#!/usr/bin/env zsh
+
+# filesystem aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# helpers
+alias grep='grep --color=auto'
+alias df='df -h' # disk free, in Gigabytes, not bytes
+alias du='du -h -c' # calculate disk usage for a folder
+
+alias lpath='echo $PATH | tr ":" "\n"' # list the PATH separated by new lines
+
+# tmux aliases
+alias ta='tmux attach'
+alias tls='tmux ls'
+alias tat='tmux attach -t'
+alias tns='tmux new-session -s'
+
+# nvim
+alias n="nvim"
+alias vim="nvim"
+
+# other shorthand aliases
+alias rmf="rm -rf"
+
+# old custom alias
+alias ssh="kitten ssh"
+alias icat="kitten icat"
+alias c="clear"
+alias n="nvim"
+alias ls="eza -hgo --no-filesize --group-directories-first --git-repos-no-status --icons=always --hyperlink"
+alias web="cd /var/www/"
+alias art="php artisan"
+alias yt="ytfzf --show-thumbnails -T kitty"
+alias rm-ffc="rm -rf ~/.cache/mozilla/firefox/*"
+alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?token=$(skate get ipinfo)' | jq"
+alias paperless-backup="docker exec -it paperless-webserver sh -c 'document_exporter /paperless_backup -z'"
+alias viewalias="alias | viewaliases"
+alias screen="TERM=screen screen"
+alias pyactive="source ~/py_env/bin/activate"
