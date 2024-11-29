@@ -1,6 +1,3 @@
-# zsh functions
-source "${HOME}/.zsh_functions"
-
 # download zinit if it doesn't exist
 if [ ! -d "$ZINIT_HOME" ]; then
    mkdir -p "$(dirname $ZINIT_HOME)"
@@ -49,12 +46,13 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 zstyle ':omz:plugins:nvm' lazy yes
 
+# zsh functions & aliases
+source "${HOME}/.zsh_functions"
+source "${HOME}/.zsh_aliases"
+
 # evals
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
 eval "$(zoxide init zsh)"
 
 # FZF
 source <(fzf --zsh)
-
-# zsh aliases
-source "${HOME}/.zsh_aliases"

@@ -1,8 +1,5 @@
 #!/usr/bin/env zsh
 
-autoload -Uz compinit
-compinit
-
 # go home
 h() {
   cd $HOME/$1
