@@ -25,6 +25,7 @@ export PATH="$PATH:${HOME}/yt-scripts"
 export PATH="$PATH:${HOME}/fastfetch/build"
 export PATH="$PATH:${HOME}/wrun"
 export PATH="$PATH:${HOME}/vdf_to_json"
+export PATH="$PATH:${HOME}/umu-terminal-search"
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd -u --type f"
