@@ -39,3 +39,4 @@ alias qbt-check="docker exec -it qbt-pro_vpn sh -c 'curl -s https://ipinfo.io/?t
 alias viewalias="alias | viewaliases"
 alias screen="TERM=screen screen"
 alias pyactive="source ~/py_env/bin/activate"
+alias redis-cli="valkey-cli"
