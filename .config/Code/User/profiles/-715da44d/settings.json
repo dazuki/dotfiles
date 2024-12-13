@@ -36,7 +36,6 @@
   "workbench.statusBar.visible": true,
   "workbench.tree.enableStickyScroll": false,
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.activityBar.location": "default",
   "workbench.layoutControl.enabled": false,
   "breadcrumbs.enabled": false,
 
