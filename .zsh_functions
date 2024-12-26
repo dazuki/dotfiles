@@ -22,3 +22,7 @@ md() {
   mkdir -p $1
   cd $1
 }
+
+0x0() {
+  curl -s -F 'file=@-' 0x0.st | tee -a "$HOME/0x0/0x0.log";
+}

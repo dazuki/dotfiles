@@ -1,5 +1,5 @@
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
 
 # charm POP
 source "${HOME}/.zsh_pop"
@@ -14,18 +14,13 @@ SAVEHIST=$HISTSIZE
 HISTDUP=erase
 
 # Export Paths
+export PATH="$PATH:/usr/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:${HOME}/bin"
 export PATH="$PATH:${HOME}/go/bin"
 export PATH="$PATH:${HOME}/.local/bin"
 export PATH="$PATH:${HOME}/.cargo/bin"
-export PATH="$PATH:${HOME}/.viewaliases"
-export PATH="$PATH:${HOME}/yt-scripts"
-export PATH="$PATH:${HOME}/fastfetch/build"
-export PATH="$PATH:${HOME}/wrun"
-export PATH="$PATH:${HOME}/vdf_to_json"
-export PATH="$PATH:${HOME}/umu-terminal-search"
 
 # fzf
 export FZF_DEFAULT_COMMAND="fd -u --type f"

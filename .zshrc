@@ -56,3 +56,5 @@ eval "$(zoxide init zsh)"
 
 # FZF
 source <(fzf --zsh)
+export PATH="/home/dazuki/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/dazuki/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
