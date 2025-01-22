@@ -41,7 +41,11 @@ alias screen="TERM=screen screen"
 alias pyactive="source ~/py_env/bin/activate"
 alias redis-cli="valkey-cli"
 
+# googletv
+alias googletv="rclone mount googletv:/Download /media/ssd/rclone/googletv --vfs-cache-mode full --dir-cache-time 15m0s --poll-interval 5m0s --stats-one-line -P --stats 2s --log-level INFO --cache-db-purge --allow-other"
+
 # arch
 alias pi="paru -Slq|fzf -m --preview 'cat <(pacman -Qi {1}|grep -e \"Install Reason\";echo '') <(paru -Si {1}) <(paru -Fl {1}|awk \"{print \$2}\")'|xargs -ro paru -S"
 alias pu="pacman -Qq|fzf -m --preview \"pacman -Qil {}\" --layout=reverse|xargs -ro sudo pacman -Rsn"
 alias clean="sudo pacman -Sc; sudo pacman -Rns \$(pacman -Qtdq); sudo pacman -Rns \$(pacman -Qttdq);"
+alias topgrade="topgrade --disable config_update --disable containers --disable git_repos"

@@ -54,6 +54,9 @@ source "${HOME}/.zsh_aliases"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
 eval "$(zoxide init zsh)"
 
+# libvirt
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
 # FZF
 source <(fzf --zsh)
 export PATH="/home/dazuki/.config/herd-lite/bin:$PATH"
