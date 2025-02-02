@@ -43,6 +43,7 @@ alias redis-cli="valkey-cli"
 alias ssd="cd /media/ssd/"
 alias external="cd /media/external/"
 alias d="kitten diff"
+alias hx="helix"
 
 # googletv
 alias googletv="rclone mount googletv:/Download /media/ssd/rclone/googletv --vfs-cache-mode full --dir-cache-time 15m0s --poll-interval 5m0s --stats-one-line -P --stats 2s --log-level INFO --cache-db-purge --allow-other"
