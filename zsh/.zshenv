@@ -38,3 +38,5 @@ typeset -aU path
 
 export EDITOR="nvim"
 export GIT_EDITOR="nvim"
+
+. "$HOME/.cargo/env"
