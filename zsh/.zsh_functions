@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+# go home
+h() {
+  cd $HOME/$1 ; clear
+}
+
+# better docker ps
+docker() {
+  case $1 in
+    ps)
+      shift
+      command dops "$@"
+      ;;
+    *)
+      command docker "$@";;
+  esac
+}
+
+# make dir
+md() {
+  mkdir -p $1
+  cd $1
+}
