@@ -1,2 +1,1 @@
-My dotfiles
-# dotfiles-wsl
+dotfiles-arch
