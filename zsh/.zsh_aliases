@@ -28,6 +28,7 @@ alias rm="rm -I"
 
 # cd to folder
 alias web="cd /var/www/"
+alias vinyl="cd /var/www/bokbindaregatan.se/vinyl-laravel/"
 
 # custom alias
 alias c="clear"
@@ -36,7 +37,6 @@ alias lls="ls"
 alias art="php artisan"
 alias redis-cli="valkey-cli"
 alias yay="paru"
-alias topgrade="topgrade --disable containers"
 
 # search packages
 alias pi="paru -Sl | awk '{ if (\$3 != \"unknown-version\") printf \"%s \033[36m%s\033[0m\n\", \$2, \$3; else print \$2 }' | \

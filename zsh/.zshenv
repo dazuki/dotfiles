@@ -19,6 +19,9 @@ export PATH="$PATH:${HOME}/.cargo/bin"
 # composer bin
 export PATH="$PATH:${HOME}/.config/composer/vendor/bin"
 
+# vscode bin
+export PATH="$PATH:${HOME}/VSCode-linux-x64"
+
 # fzf
 export FZF_DEFAULT_COMMAND="fd -H -I --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
