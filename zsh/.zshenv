@@ -16,6 +16,9 @@ export PATH="$PATH:${HOME}/go/bin"
 export PATH="$PATH:${HOME}/.local/bin"
 export PATH="$PATH:${HOME}/.cargo/bin"
 
+# composer bin
+export PATH="$PATH:${HOME}/.config/composer/vendor/bin"
+
 # fzf
 export FZF_DEFAULT_COMMAND="fd -H -I --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
