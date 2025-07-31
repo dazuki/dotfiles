@@ -4,10 +4,10 @@ WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
 dimensions = { columns = 140, lines = 36 }
-opacity = 0.95
+opacity = 0.90
 dynamic_padding = true
 dynamic_title = true
-decorations = "None"
+decorations = "Full"
 
 [font]
 normal = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
@@ -18,7 +18,7 @@ size = 14
 save_to_clipboard = true
 
 [colors.primary]
-background = "#161616"
+background = "#101010"
 
 [keyboard]
 [[keyboard.bindings]]
