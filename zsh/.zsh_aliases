@@ -23,6 +23,10 @@ alias tns='tmux new-session -s'
 alias n="nvim"
 alias vim="nvim"
 
+# nano > micro
+alias nano="micro"
+alias mc="micro"
+
 # other shorthand aliases
 alias rm="rm -I"
 

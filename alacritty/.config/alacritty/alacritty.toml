@@ -23,7 +23,7 @@ background = "#101010"
 [keyboard]
 [[keyboard.bindings]]
 key = "Q"
-mods = "Control"
+mods = "Control|Shift"
 action = "Quit"
 
 [terminal]
