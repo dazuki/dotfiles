@@ -20,7 +20,7 @@ alias tat='tmux attach -t'
 alias tns='tmux new-session -s'
 
 # kitty terminal
-#alias ssh="kitten ssh"
+alias ssh="kitten ssh"
 
 # nvim
 alias n="nvim"
