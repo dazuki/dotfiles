@@ -9,12 +9,12 @@ auto = false
 source = "cdn"
 
 [secondary_prompt]
-  template = ' >> '
+  template = '>> '
   foreground = 'magenta'
   background = 'transparent'
 
 [transient_prompt]
-  template = ' 󰘍 '
+  template = '> '
   background = 'transparent'
   foreground_templates = ['{{if gt .Code 0}}green{{end}}', '{{if eq .Code 0}}yellow{{end}}']
 
@@ -79,7 +79,7 @@ source = "cdn"
   newline = true
 
   [[blocks.segments]]
-    template = ' 󰘍'
+    template = '>'
     background = 'transparent'
     type = 'text'
     style = 'plain'
