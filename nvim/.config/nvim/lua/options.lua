@@ -16,3 +16,9 @@ vim.filetype.add({
     [".*/sites%-enabled/.*$"] = "nginx",
   },
 })
+
+vim.filetype.add({
+  pattern = {
+    [".*%.sh$"] = "sh",
+  },
+})
