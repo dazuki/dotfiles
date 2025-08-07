@@ -37,6 +37,9 @@ export LESS_TERMCAP_ue=$(tput rmul; tput sgr0)
 export LESS_TERMCAP_mr=$(tput rev)
 export LESS_TERMCAP_mh=$(tput dim)
 
+# google gemini api
+export GEMINI_API_KEY=$(skate get gemini_api_key)
+
 typeset -aU path
 
 export EDITOR="nvim"
