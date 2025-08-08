@@ -23,7 +23,7 @@ export PATH="$PATH:${HOME}/.config/composer/vendor/bin"
 export FZF_DEFAULT_COMMAND="fd -H -I --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CUSTOM_COLORS="--color hl:#61AFEF,hl+:#56B6C2"
-export FZF_DEFAULT_OPTS="$FZF_CUSTOM_COLORS --preview 'if [ -f {} ]; then bat --style=numbers --color=always --line-range :500 {}; elif [ -d {} ]; then ls -la {}; fi' --preview-window=right:50%:wrap --bind='ctrl-/:toggle-preview'"
+export FZF_DEFAULT_OPTS="$FZF_CUSTOM_COLORS --preview 'if [ -f {} ]; then bat --style=numbers --color=always --line-range :500 {}; elif [ -d {} ]; then eza -la --group-directories-first --icons=always --no-git --no-permissions --no-filesize --no-user --no-time {}; fi' --preview-window=right:50%:wrap --bind='ctrl-/:toggle-preview'"
 
 # add color to man pages
 export MANROFFOPT="-c"
