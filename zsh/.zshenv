@@ -25,7 +25,7 @@ export PATH="$PATH:${HOME}/vopono"
 # fzf
 export FZF_DEFAULT_COMMAND="fd -H --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_CUSTOM_COLORS="--color hl:#61AFEF,hl+:#56B6C2"
+export FZF_CUSTOM_COLORS="--color=bg+:#293739,bg:#1B1D1E,border:#808080,spinner:#E6DB74,hl:#7E8E91,fg:#CCCCCC,header:#7E8E91,info:#A6E22E,pointer:#A6E22E,marker:#F92672,fg+:#CCCCCC,prompt:#F92672,hl+:#F92672"
 export FZF_DEFAULT_OPTS="$FZF_CUSTOM_COLORS --style minimal --preview 'if [ -f {} ]; then bat --style=numbers --color=always --line-range :500 {}; elif [ -d {} ]; then eza -la --group-directories-first --icons=always --no-git --no-permissions --no-filesize --no-user --no-time {}; fi' --preview-window=right:50%:wrap --bind='ctrl-/:toggle-preview'"
 
 # add color to man pages
