@@ -33,7 +33,7 @@ source = "cdn"
       home_enabled = true
 
   [[blocks.segments]]
-    template = '{{ if eq .HostName "cachyos-server" }}<yellow>CachyOS-Server</>{{ else }}Arch{{ end }} <green>{{ .Path }}</>{{ if not .Writable }} <red></>{{ end }}'
+    template = '{{ if eq .HostName "cachyos-server" }}<yellow>CachyOS-Server</>{{ else }}CachyOS-Desktop{{ end }} <green>{{ .Path }}</>{{ if not .Writable }} <red></>{{ end }}'
     foreground = 'blue'
     background = 'transparent'
     type = 'path'
