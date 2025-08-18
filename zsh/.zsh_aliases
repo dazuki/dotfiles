@@ -30,6 +30,9 @@ alias vim="nvim"
 alias nano="micro"
 alias mc="micro"
 
+# helix
+alias hx="helix"
+
 # other shorthand aliases
 alias rm="rm -I"
 
