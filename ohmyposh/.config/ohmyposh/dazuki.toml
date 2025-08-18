@@ -33,7 +33,7 @@ source = "cdn"
       home_enabled = true
 
   [[blocks.segments]]
-    template = 'Arch <green>{{ .Path }}</>{{ if not .Writable }} <red></>{{ end }}'
+    template = '{{ .HostName }} <green>{{ .Path }}</>{{ if not .Writable }} <red></>{{ end }}'
     foreground = 'blue'
     background = 'transparent'
     type = 'path'
