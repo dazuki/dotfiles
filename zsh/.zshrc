@@ -25,7 +25,11 @@ zinit snippet OMZP::archlinux
 fpath=(~/.zsh/completions $fpath)
 
 # load completions
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
 
 zinit cdreplay -q
 
