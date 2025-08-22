@@ -33,6 +33,9 @@ alias mc="micro"
 # helix
 alias hx="helix"
 
+# copyparty
+alias cparty="copyparty -v ./:/:r"
+
 # other shorthand aliases
 alias rm="rm -I"
 
