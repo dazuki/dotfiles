@@ -14,10 +14,10 @@ alias ncdu='ncdu --color dark-bg'
 alias lpath='echo $PATH | tr ":" "\n"' # list the PATH separated by new lines
 
 # tmux aliases
-alias ta='tmux attach'
-alias tls='tmux ls'
-alias tat='tmux attach -t'
-alias tns='tmux new-session -s'
+alias ta="tmux attach"
+alias tls="tmux ls"
+alias tat="tmux attach -t"
+alias tns="tmux new-session -s"
 
 # kitty terminal
 alias ssh="kitten ssh"
@@ -50,6 +50,7 @@ alias lls="ls"
 alias art="php artisan"
 alias redis-cli="valkey-cli"
 alias yay="paru"
+alias diff="delta --color-only --diff-so-fancy --paging=never"
 
 # search packages
 alias pi="paru -Sl | awk '{ if (\$3 != \"unknown-version\") printf \"%s \033[36m%s\033[0m\n\", \$2, \$3; else print \$2 }' | \
