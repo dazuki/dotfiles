@@ -40,8 +40,8 @@ source = "cdn"
     style = 'plain'
 
     [blocks.segments.properties]
-      style = 'full'
-      max_depth = 3
+      style = 'agnoster_short'
+      max_depth = 5
       home_icon = '~/'
 
       [blocks.segments.properties.mapped_locations]
