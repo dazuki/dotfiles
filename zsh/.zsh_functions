@@ -30,3 +30,24 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+
+pi() {
+  paru -Sl | awk '{ 
+      if ($3 != "unknown-version") 
+          printf "%s \033[36m%s\033[0m\n", $2, $3; 
+      else 
+          print $2 
+  }' | \
+    fzf --ansi \
+        --preview '
+          pkg=$(echo {} | awk "{print \$1}");
+          echo -e "\e[0;32mInstallation Status:\e[0m";
+          paru -Qi "$pkg" &>/dev/null \
+            && echo -e "\e[0;32mInstalled\e[0m" \
+            || echo -e "\e[0;31mNot Installed\e[0m";
+          echo;
+          paru -Si "$pkg"
+        ' | \
+    awk '{print $1}' | \
+    xargs -ro paru -S
+}
