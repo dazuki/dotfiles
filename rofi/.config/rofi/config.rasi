@@ -1,0 +1,8 @@
+configuration {
+    click-to-exit: true;
+    show-icons: true;
+    steal-focus: true;
+    auto-select: false;
+}
+
+@theme "./spotlight-dark.rasi"
