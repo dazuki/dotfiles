@@ -21,6 +21,7 @@ alias tns="tmux new-session -s"
 
 # kitty terminal
 alias ssh="kitten ssh"
+alias kcat="kitten icat"
 
 # nvim
 alias n="nvim"
