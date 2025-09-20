@@ -40,6 +40,9 @@ alias cparty="copyparty -v ./:/:r"
 # lazygit
 alias lg="lazygit"
 
+# oxker (docker)
+alias oxker="oxker -ct"
+
 # other shorthand aliases
 alias rm="rm -I"
 
