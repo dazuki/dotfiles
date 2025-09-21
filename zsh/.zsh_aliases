@@ -10,7 +10,7 @@ alias .....="cd ../../../.."
 alias grep='grep --color=auto'
 alias df='duf --sort size --hide special'
 alias du='du -h -c' # calculate disk usage for a folder
-alias ncdu='ncdu --color off'
+alias ncdu='ncdu --color dark'
 alias lpath='echo $PATH | tr ":" "\n"' # list the PATH separated by new lines
 
 # tmux aliases
