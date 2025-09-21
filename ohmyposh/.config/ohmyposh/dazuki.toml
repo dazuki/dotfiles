@@ -1,3 +1,5 @@
+"$schema" = 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json'
+
 console_title_template = '{{ .HostName }}: {{ .PWD }}'
 version = 3
 final_space = true
@@ -9,78 +11,85 @@ auto = false
 source = "cdn"
 
 [secondary_prompt]
-  template = '>> '
-  foreground = 'magenta'
-  background = 'transparent'
+template = '>> '
+foreground = 'magenta'
+background = 'transparent'
 
 [transient_prompt]
-  template = '> '
-  background = 'transparent'
-  foreground_templates = ['{{if gt .Code 0}}green{{end}}', '{{if eq .Code 0}}yellow{{end}}']
+template = '> '
+background = 'transparent'
+foreground_templates = ['{{if gt .Code 0}}green{{end}}', '{{if eq .Code 0}}yellow{{end}}']
 
 [[blocks]]
-  type = 'prompt'
-  alignment = 'left'
+type = 'prompt'
+alignment = 'left'
 
   [[blocks.segments]]
-    type = 'python'
-    style = 'plain'
-    foreground = "green"
-    background = "transparent"
-    template = " {{ .Major }}.{{ .Minor }} "
+  type = 'python'
+  style = 'plain'
+  foreground = "green"
+  background = "transparent"
+  template = " {{ .Major }}.{{ .Minor }} "
 
     [blocks.segments.properties]
-      home_enabled = true
+    home_enabled = true
 
   [[blocks.segments]]
-    template = '{{ if eq .HostName "cachyos-server" }}<yellow>[server] CachyOS:</>{{ else if eq .HostName "v8817" }}<cyan>[server] Debian:</>{{ else }}[desktop] CachyOS:{{ end }} <green>{{ .Path }}</>{{ if not .Writable }} <red></>{{ end }}'
-    foreground = 'blue'
-    background = 'transparent'
-    type = 'path'
-    style = 'plain'
+  type = 'text'
+  style = 'plain'
+  template = '{{ if eq .HostName "cachyos-server" }}<yellow>[server] CachyOS:</>{{ else if eq .HostName "v8817" }}<cyan>[server] Debian:</>{{ else }}[desktop] CachyOS:{{ end }} '
+  foreground = 'blue'
+  background = 'transparent'
+
+  [[blocks.segments]]
+  template = '<green>{{ .Path }}</>{{ if not .Writable }} <red></>{{ end }}'
+  foreground = 'blue'
+  background = 'transparent'
+  type = 'path'
+  style = 'plain'
 
     [blocks.segments.properties]
-      style = 'agnoster_short'
-      max_depth = 5
-      home_icon = '~/'
+    style = 'agnoster_short'
+    max_depth = 5
+    home_icon = '~/'
 
       [blocks.segments.properties.mapped_locations]
       "/mnt/c/" = "<magenta>/mnt/c</>"
 
   [[blocks.segments]]
-    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }} <yellow>*</>{{ end }}{{ if gt .Behind 0 }}<cyan>⇣</>{{ end }}{{ if gt .Ahead 0 }}<cyan>⇡</>{{ end }}'
-    foreground = 'p:grey'
-    background = 'transparent'
-    type = 'git'
-    style = 'plain'
+  template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }} <yellow>*</>{{ end }}{{ if gt .Behind 0 }}<cyan>⇣</>{{ end }}{{ if gt .Ahead 0 }}<cyan>⇡</>{{ end }}'
+  foreground = 'p:grey'
+  background = 'transparent'
+  type = 'git'
+  style = 'plain'
 
     [blocks.segments.properties]
-      branch_icon = ''
-      commit_icon = '@'
-      fetch_status = true
+    branch_icon = ''
+    commit_icon = '@'
+    fetch_status = true
 
 [[blocks]]
-  type = 'rprompt'
-  overflow = 'hidden'
+type = 'rprompt'
+overflow = 'hidden'
 
   [[blocks.segments]]
-    template = '{{ .FormattedMs }}'
-    foreground = 'yellow'
-    background = 'transparent'
-    type = 'executiontime'
-    style = 'plain'
+  template = '{{ .FormattedMs }}'
+  foreground = 'yellow'
+  background = 'transparent'
+  type = 'executiontime'
+  style = 'plain'
 
     [blocks.segments.properties]
-      threshold = 5000
+    threshold = 5000
 
 [[blocks]]
-  type = 'prompt'
-  alignment = 'left'
-  newline = true
+type = 'prompt'
+alignment = 'left'
+newline = true
 
   [[blocks.segments]]
-    template = '>'
-    background = 'transparent'
-    type = 'text'
-    style = 'plain'
-    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}green{{end}}']
+  template = '>'
+  background = 'transparent'
+  type = 'text'
+  style = 'plain'
+  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}green{{end}}']
