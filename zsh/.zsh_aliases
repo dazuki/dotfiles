@@ -37,8 +37,9 @@ alias hx="helix"
 # copyparty
 alias cparty="copyparty -v ./:/:r"
 
-# lazygit
-alias lg="lazygit"
+# lazygit/docker
+alias lzg="lazygit"
+alias lzd="lazydocker"
 
 # oxker (docker)
 alias oxker="oxker -ct"
