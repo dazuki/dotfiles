@@ -3,4 +3,4 @@ git:
     - colorArg: always
       pager: delta --diff-so-fancy --paging=never
 gui:
-  border: single
+  border: hidden

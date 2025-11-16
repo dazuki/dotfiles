@@ -1,5 +1,5 @@
 gui:
-  border: single
+  border: hidden
 logs:
   since: ''
   tail: '300'
