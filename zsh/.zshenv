@@ -45,6 +45,8 @@ export GEMINI_API_KEY=$(skate get gemini_api_key)
 
 typeset -aU path
 
+export SUDO_EDITOR=$(which nvim)
+export VISUAL="nvim"
 export EDITOR="nvim"
 export GIT_EDITOR="nvim"
 
