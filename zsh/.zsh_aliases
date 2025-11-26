@@ -57,7 +57,7 @@ alias ls="eza -hgo --group-directories-first --git-repos-no-status --icons=alway
 alias lls="ls"
 alias art="php artisan"
 alias redis-cli="valkey-cli"
-alias yay="paru"
+#alias yay="paru"
 alias diff="delta --color-only --diff-so-fancy --paging=never"
 
 # search packages

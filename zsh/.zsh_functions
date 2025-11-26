@@ -32,6 +32,12 @@ function y() {
 }
 
 pi() {
+  # Check if paru is working first
+  if ! paru -Sl &>/dev/null; then
+    echo "Error: paru failed. Try running 'paru -Syy' to refresh databases."
+    return 1
+  fi
+  
   paru -Sl | awk '{ 
       if ($3 != "unknown-version") 
           printf "%s \033[36m%s\033[0m\n", $2, $3; 
@@ -46,7 +52,7 @@ pi() {
             && echo -e "\e[0;32mInstalled\e[0m" \
             || echo -e "\e[0;31mNot Installed\e[0m";
           echo;
-          paru -Si "$pkg"
+          paru -Si "$pkg" 2>/dev/null || echo "Could not fetch package info"
         ' | \
     awk '{print $1}' | \
     xargs -ro paru -S
