@@ -44,6 +44,9 @@ alias lzd="lazydocker"
 # oxker (docker)
 alias oxker="oxker -ct"
 
+# gemini pro
+alias gemini="gemini -m pro" 
+
 # other shorthand aliases
 alias rm="rm -I"
 
@@ -57,22 +60,6 @@ alias ls="eza -hgo --group-directories-first --git-repos-no-status --icons=alway
 alias lls="ls"
 alias art="php artisan"
 alias redis-cli="valkey-cli"
-#alias yay="paru"
+alias yay="paru"
 alias diff="delta --color-only --diff-so-fancy --paging=never"
-
-# search packages
-#alias pi="paru -Sl | awk '{ if (\$3 != \"unknown-version\") printf \"%s \033[36m%s\033[0m\n\", \$2, \$3; else print \$2 }' | \
-#    fzf --multi --ansi \
-#        --bind 'ctrl-i:reload(paru -Qe | cut -d\" \" -f1)' \
-#        --bind 'ctrl-a:reload(paru -Sl | awk \"{ if (\\\$3 != \\\"unknown-version\\\") printf \\\"%s \\\033[36m%s\\\033[0m\\\\n\\\", \\\$2, \\\$3; else print \\\$2 }\")' \
-#        --preview 'pkg=\$(echo {} | awk \"{print \\\$1}\"); \
-#                  paru -Si \"\$pkg\"; \
-#                  echo; \
-#                  echo -e \"\e[0;32mInstallation Status:\e[0m\"; \
-#                  paru -Qi \"\$pkg\" 2>/dev/null >/dev/null && echo -e \"\e[0;32mInstalled\e[0m\" || echo -e \"\e[0;31mNot Installed\e[0m\"' \
-#        --header='(TAB: multi-select, CTRL-I: installed only, CTRL-A: all packages)' | \
-#    awk '{print \$1}' | \
-
-
-# logs
 alias log-upg="grep -i upgraded /var/log/pacman.log | awk '{gsub(/[\[\]]/, \"\", \$1); split(\$1, dt, \"T\"); split(dt[2], t, \"[-+]\"); printf \"\033[34m%s %s\033[0m \033[33m%s\033[0m %s %s %s\n\", dt[1], t[1], \$4, \$5, \$6, \$7}'"
