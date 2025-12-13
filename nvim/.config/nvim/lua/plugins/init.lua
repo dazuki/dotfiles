@@ -27,6 +27,7 @@ return {
         "html",
         "css",
         "toml",
+        "python",
       },
     },
   },
@@ -36,6 +37,7 @@ return {
     opts = {
       ensure_installed = {
         "taplo",
+        "pyright",
       },
     },
   },
