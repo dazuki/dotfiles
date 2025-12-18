@@ -37,7 +37,7 @@ return {
     opts = {
       ensure_installed = {
         "taplo",
-        "pyright",
+        "ty",
       },
     },
   },

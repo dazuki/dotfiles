@@ -11,17 +11,7 @@ local servers = {
   lua_ls = {},
   jsonls = {},
   taplo = {},
-
-  pyright = {
-    settings = {
-      python = {
-        analysis = {
-          autoSearchPaths = true,
-          typeCheckingMode = "off",
-        },
-      },
-    },
-  },
+  ty = {},
 }
 
 for name, opts in pairs(servers) do
