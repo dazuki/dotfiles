@@ -2788,4 +2788,3 @@ include dazuki.conf
 #: }}}
 
 #: }}}
-map shift+enter send_text all \e\r
