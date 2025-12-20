@@ -26,10 +26,7 @@ fpath=(~/.zsh/completions $fpath)
 
 # load completions
 autoload -Uz compinit
-for dump in ~/.zcompdump(N.mh+24); do
-  compinit
-done
-compinit -C
+compinit
 
 zinit cdreplay -q
 
