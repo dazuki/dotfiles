@@ -31,29 +31,18 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-pi() {
-  # Check if paru is working first
-  if ! paru -Sl &>/dev/null; then
-    echo "Error: paru failed. Try running 'paru -Syy' to refresh databases."
-    return 1
-  fi
-  
-  paru -Sl | awk '{ 
-      if ($3 != "unknown-version") 
-          printf "%s \033[36m%s\033[0m\n", $2, $3; 
-      else 
-          print $2 
-  }' | \
-    fzf --ansi \
-        --preview '
-          pkg=$(echo {} | awk "{print \$1}");
-          echo -e "\e[0;32mInstallation Status:\e[0m";
-          paru -Qi "$pkg" &>/dev/null \
-            && echo -e "\e[0;32mInstalled\e[0m" \
-            || echo -e "\e[0;31mNot Installed\e[0m";
-          echo;
-          paru -Si "$pkg" 2>/dev/null || echo "Could not fetch package info"
-        ' | \
+function pi() {
+    if [ -z "$1" ]; then
+        echo "You need a searchterm. Example: pi firefox"
+        return 1
+    fi
+
+    LC_ALL=C paru -Ss --color=always "$@" | \
+    grep -v '^    ' | \
+    sed -E 's/ [^ ]+\[[0-9][^]]+\]//' | \
+    fzf --ansi --multi --layout=reverse --height=80% --border \
+        --header 'TAB: Mark | ENTER: Install' \
+        --preview 'paru -Si {1}' | \
     awk '{print $1}' | \
-    xargs -ro paru -S
+    xargs -r paru -S
 }
