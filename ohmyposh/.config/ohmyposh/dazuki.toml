@@ -37,7 +37,7 @@ final_space = true
       home_enabled = true
 
   [[blocks.segments]]
-    template = '{{ if eq .HostName "cachyos-server" }}<yellow>[server] CachyOS:</>{{ else if eq .HostName "v8817" }}<cyan>[server] Debian:</>{{ else }}[desktop] CachyOS:{{ end }} '
+    template = '{{ if eq .HostName "cachyos-server" }}<yellow>[server] CachyOS:</>{{ else if eq .HostName "v8817" }}<lightRed>[server] Debian:</>{{ else }}[desktop] CachyOS:{{ end }} '
     foreground = 'blue'
     background = 'transparent'
     type = 'text'
