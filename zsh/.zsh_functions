@@ -33,16 +33,19 @@ function y() {
 
 function pi() {
     if [ -z "$1" ]; then
-        echo "You need a searchterm. Example: pi firefox"
+        echo "Searchterm is required! Example: pi firefox"
         return 1
     fi
 
-    LC_ALL=C paru -Ss --color=always "$@" | \
+    packages=$(LC_ALL=C paru -Ss --color=always "$@" | \
     grep -v '^    ' | \
     sed -E 's/ [^ ]+\[[0-9][^]]+\]//' | \
     fzf --ansi --multi --layout=reverse --height=80% --border \
         --header 'TAB: Mark | ENTER: Install' \
         --preview 'paru -Si {1}' | \
-    awk '{print $1}' | \
-    xargs -r paru -S
+    awk '{print $1}')
+
+    if [ -n "$packages" ]; then
+        paru -S $(echo "$packages")
+    fi
 }
