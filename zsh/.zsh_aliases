@@ -64,6 +64,7 @@ alias yay="paru"
 alias diff="delta --color-only --diff-so-fancy --paging=never"
 alias log-upg="grep -i upgraded /var/log/pacman.log | awk '{gsub(/[\[\]]/, \"\", \$1); split(\$1, dt, \"T\"); split(dt[2], t, \"[-+]\"); printf \"\033[34m%s %s\033[0m \033[33m%s\033[0m %s %s %s\n\", dt[1], t[1], \$4, \$5, \$6, \$7}'"
 alias pall="pacman -Sl | awk '{print \$2(\$4==\"[installed]\"? \" \x1b[32m[INSTALLED]\x1b[0m\" : \"\")}' | fzf --ansi --multi --preview 'pacman -Si {1}' | xargs -r paru -S"
+alias htbot='journalctl -u htbot-discord.service -f -n 50'
 
 # suffix aliases
 alias -s md="bat"
