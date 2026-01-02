@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "398796d"
-hash = "73788c7dc5827ef4677c502c3ea8fa19"
+rev = "80cd5b5"
+hash = "170317244d60fbe70ad3cc3353358480"
 
 [[plugin.deps]]
 use = "saumyajyoti/omp"
@@ -10,7 +10,7 @@ hash = "ca913db57342496f96c533725a64ccc4"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "398796d"
+rev = "80cd5b5"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
