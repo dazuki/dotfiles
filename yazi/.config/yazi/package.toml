@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "80cd5b5"
-hash = "170317244d60fbe70ad3cc3353358480"
+rev = "03cdd4b"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "saumyajyoti/omp"
@@ -10,13 +10,18 @@ hash = "ca913db57342496f96c533725a64ccc4"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "80cd5b5"
+rev = "03cdd4b"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "ndtoan96/ouch"
 rev = "cfb9140"
 hash = "b5067143415bd2d46c0dfa57319ddcef"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "03cdd4b"
+hash = "2dd68af59418b631b9703a03f606b31f"
 
 [[flavor.deps]]
 use = "gosxrgxx/flexoki-dark"
