@@ -9,6 +9,7 @@ fi
 # check os-release
 if [ -f /etc/os-release ]; then
   source /etc/os-release
+fi
 
 # source/load zinit
 source "${ZINIT_HOME}/zinit.zsh"
