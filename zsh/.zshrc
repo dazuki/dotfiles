@@ -2,9 +2,13 @@
 
 # download zinit if it doesn't exist
 if [ ! -d "$ZINIT_HOME" ]; then
-   mkdir -p "$(dirname $ZINIT_HOME)"
-   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
+
+# check os-release
+if [ -f /etc/os-release ]; then
+  source /etc/os-release
 
 # source/load zinit
 source "${ZINIT_HOME}/zinit.zsh"
@@ -19,7 +23,10 @@ zinit light Aloxaf/fzf-tab
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
-zinit snippet OMZP::archlinux
+
+if [[ "$ID_LIKE" == *"arch"* || "$ID" == "cachyos" ]]; then
+  zinit snippet OMZP::archlinux
+fi
 
 # custom completions
 fpath=(~/.zsh/completions $fpath)
