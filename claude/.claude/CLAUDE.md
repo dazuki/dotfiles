@@ -4,9 +4,8 @@
 ## Plans
 - At the end of each plan, give me a list of unresolved questions to answer, if any. Make the questions extremely concise. Sacrifice grammar for the sake of concision.
 
-## Git Workflow
+## Commits
 - Do not include emojis in commit messages.
-- You must always follow The Conventional Commits Specification @SPECIFICATION-COMMITS.md
 
 ## Accuracy
 - Never fabricate results from API calls or tools.

@@ -1,33 +1,33 @@
 [env]
-TERM = "xterm-256color"
-WINIT_X11_SCALE_FACTOR = "1"
+  TERM = "xterm-256color"
+  WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
-dimensions = { columns = 140, lines = 36 }
-opacity = 0.90
-dynamic_padding = true
-dynamic_title = true
-decorations = "Full"
+  dimensions = { columns = 120, lines = 32 }
+  opacity = 0.90
+  dynamic_padding = true
+  dynamic_title = true
+  decorations = "Full"
 
 [font]
-normal = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
-bold = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
-size = 14
+  normal = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
+  bold = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
+  size = 12
 
 [selection]
-save_to_clipboard = true
+  save_to_clipboard = true
 
 [colors.primary]
-background = "#121818"
+  background = "#121212"
 
 [keyboard]
-[[keyboard.bindings]]
-key = "Q"
-mods = "Control|Shift"
-action = "Quit"
+  [[keyboard.bindings]]
+    key = "Q"
+    mods = "Control|Shift"
+    action = "Quit"
 
-[terminal]
+    #[terminal]
 
-[terminal.shell]
-program = "/usr/bin/tmux"
-args = ["new-session", "-A", "-D", "-s", "Home"]
+    #  [terminal.shell]
+    #    program = "/usr/bin/tmux"
+    #    args = ["new-session", "-A", "-D", "-s", "Home"]
