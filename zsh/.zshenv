@@ -20,7 +20,7 @@ export PATH="$PATH:${HOME}/.local/bin"
 export PATH="$PATH:${HOME}/.cargo/bin"
 
 # tmpdir
-export TMPDIR=$HOME/.tmp
+# export TMPDIR=$HOME/.tmp
 
 # composer bin
 export PATH="$PATH:${HOME}/.config/composer/vendor/bin"
