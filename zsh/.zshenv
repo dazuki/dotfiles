@@ -19,6 +19,9 @@ export PATH="$PATH:${HOME}/go/bin"
 export PATH="$PATH:${HOME}/.local/bin"
 export PATH="$PATH:${HOME}/.cargo/bin"
 
+# tmpdir
+export TMPDIR=$HOME/.tmp
+
 # composer bin
 export PATH="$PATH:${HOME}/.config/composer/vendor/bin"
 
@@ -49,6 +52,9 @@ export GEMINI_API_KEY=$(skate get gemini_api_key)
 # mcp
 export CONTEXT7_API_KEY=$(skate get context7_api_key)
 export EXA_API_KEY=$(skate get exa_api_key)
+
+# dotnet telemetry
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 typeset -aU path
 

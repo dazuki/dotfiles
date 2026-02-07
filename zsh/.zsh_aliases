@@ -35,7 +35,7 @@ alias mc="micro"
 alias hx="helix"
 
 # copyparty
-alias cparty="copyparty -v ./:/:r"
+alias cparty="copyparty --theme 2 --xff-hdr x-forwarded-for --xff-src 192.168.0.159 --rproxy 1 -v ./:/:r"
 
 # lazygit/docker
 alias lzg="lazygit"
