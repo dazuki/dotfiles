@@ -3,15 +3,15 @@
   WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
-  dimensions = { columns = 120, lines = 32 }
-  opacity = 0.90
+  dimensions = { columns = 140, lines = 36 }
+  opacity = 0.95
   dynamic_padding = true
   dynamic_title = true
   decorations = "Full"
 
 [font]
-  normal = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
-  bold = { family = "JetbrainsMono Nerd Font Mono", style = "Medium" }
+  normal = { family = "JetbrainsMonoNL Nerd Font Mono", style = "Medium" }
+  bold = { family = "JetbrainsMonoNL Nerd Font Mono", style = "Medium" }
   size = 12
 
 [selection]
@@ -22,7 +22,7 @@
 
 [keyboard]
   [[keyboard.bindings]]
-    key = "Q"
+    key = "W"
     mods = "Control|Shift"
     action = "Quit"
 
