@@ -1,6 +1,6 @@
 git:
   pagers:
-    - colorArg: always
-      pager: delta --diff-so-fancy --paging=never
+    - pager: delta --features=minimal
+      colorArg: always
 gui:
   border: single

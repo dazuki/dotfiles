@@ -23,6 +23,28 @@ md() {
   cd $1
 }
 
+# git diff
+gdiff() {
+  git diff --no-index "$@"
+}
+
+# git diff - minimal
+gdiffm() {
+  git diff --no-index "$@" | delta --features=minimal
+}
+
+# REMINDER: To use 'gdiff' until it's ingrained into my brain!
+diff() {
+  echo "!! Use 'gdiff <file|dir> <file|dir>' for delta-powered git diff !!"
+  echo "(This setup uses git diff --no-index instead of GNU diff.)"
+}
+
+# original GNU diff
+odiff() {
+  command diff "$@"
+}
+
+# yazi dir helper
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -31,6 +53,7 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# pacman search
 function pi() {
     if [ -z "$1" ]; then
         echo "Searchterm is required! Example: pi firefox"

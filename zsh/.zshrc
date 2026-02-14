@@ -66,6 +66,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza -1 --color=always $real
 source "${HOME}/.zsh_functions"
 source "${HOME}/.zsh_aliases"
 
+# custom compinit
+compdef _files gdiff
+compdef _files gdiffm
+
 # evals
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/dazuki.toml)"
 eval "$(zoxide init zsh)"
