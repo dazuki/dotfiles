@@ -30,6 +30,10 @@
 ## Commits
 - No emojis
 - Concise messages
+- Use Conventional Commits spec: https://www.conventionalcommits.org/en/v1.0.0/
+  - Types: fix, feat, refactor, ci, docs, chore, style, test, perf, build
+  - Format: `type(scope): description` or `type: description`
+  - Breaking changes: `type!: description` or footer `BREAKING CHANGE:`
 
 ## Accuracy
 - Never fabricate API/tool results
